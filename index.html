@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eed4a29fc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+   <div class="container">
+    <nav>
+        <img src="images/Rafa.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Front-End Developer</p>
+        <h1>Hi, I'm <span>Rafa</span><br> Sanyour From Syria</h1>
+    </div>
+   </div>
+</div>
+<!-----------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/R1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Rafa Sanyour, a Junior Front-End Developer driven by a passion for innovation and 
+                    a thirst for meaningful change. With a strategic mindset and keen attention to detail, 
+                    I thrive on crafting impactful solutions that push boundaries and elevate user experiences.
+                    In my recent role as an Administrative Assistant at Dar Aliman, I spearheaded IT support, 
+                    resolving complex technical issues and enhancing team productivity. Despite the challenge of 
+                    limited resources, I successfully implemented efficient solutions that improved our operations. 
+                    Additionally, my volunteer work with Coursera and Theirworld demonstrates my commitment to 
+                    leveraging technology for educational advancement and global impact.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Volunteer')">Volunteer</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Team Management</span><br>Effective team coordination and goal achievement.</li>
+                        <li><span>Leadership</span><br>Initiative-taking and team guidance towards success.</li>
+                        <li><span>Teamwork</span><br>Excellent collaboration and problem-solving skills.</li>
+                        <li><span>Attention to Detail</span><br>Meticulous approach ensuring quality and accuracy.</li>
+                        <li><span>Problem Solving</span><br>Analytical thinker adept at innovative solutions.</li>
+                        <li><span>IT Support</span><br>Hardware and software troubleshooting proficiency.</li>
+                        <li><span>Front-End Development</span><br>Basic understanding of HTML, CSS, and JavaScript.</li>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Project Assistant</span><br>2024-present<br>Assisted in managing projects, coordinating resources, and providing administrative support.</li>
+                        <li><span>Customer Service Representative</span><br>2022-2023<br>Interacted with customers to address inquiries and provide support, demonstrating strong communication skills.</li>
+                        <li><span>Technical Support Specialist</span><br>2022-2023<br>Provided technical assistance and troubleshooting for hardware and software issues, documenting solutions for knowledge sharing.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Bachelor of Science in Computer Science</span><br>Expected Graduation: November 2024<br>GPA: 3.7</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Volunteer">
+                    <ul>
+                        <li><span>Translator (English/Arabic)</span><br>Organization: Coursera Global Translator Community (GTC)<br>October 2021 - November 2021<br>Contributed over 15,000 words of high-quality translations for Coursera courses, enhancing accessibility for Arabic-speaking learners worldwide.</li>
+                        <li><span>Volunteer Educator</span><br>Organization: Theirworld<br>December 2021 - December 2023<br>Supported educational initiatives for global education and youth empowerment, collaborating on projects and advocacy activities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Design</h2>
+                <p>Transforming visions into captivating digital experiences with elegant design solutions and seamless user interfaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>IT Support Services</h2>
+                <p>Providing technical assistance and troubleshooting for hardware and software issues, leveraging expertise as a Google IT Support Specialist.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-bars-progress"></i>
+                <h2>Project Management</h2>
+                <p>Assisting clients in managing and coordinating projects, ensuring timely completion and adherence to specifications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <h2>Customer Service Solutions</h2>
+                <p>Offering customer service solutions, including handling inquiries, resolving issues, and providing support in a professional manner.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Technical Support</h2>
+                <p>Providing technical assistance and troubleshooting for hardware and software issues, utilizing diagnostic tools and troubleshooting techniques.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Training and Workshops</h2>
+                <p>Conducting training sessions or workshops on IT support, front-end development, or related topics.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/homescreen.png">
+                <div class="layer">
+                    <h3>Coding Projects</h3>
+                    <p>Explore my coding projects demonstrating my skills 
+                        in beginner-level front-end and back-end development.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cybersecurity  logo  (1).png">
+                <div class="layer">
+                    <h3>Cybersecurity Basics</h3>
+                    <p>Explore foundational concepts of cybersecurity and learn how to protect against online threats and vulnerabilities.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/wallpaper programming.png">
+                <div class="layer">
+                    <h3>Code Development</h3>
+                    <p>Discover my ability to develop beginner-level clean and efficient code for various projects and applications.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+    </div>
+</div>
+<!--------------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>rafah.sanyour@outlook.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>0096170605812</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rafa-sanyour"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/rafah0930"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/r.a.f.a.97?igsh=Yjc3eG5qMzg1cXlr"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Rafa CV.docx" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email"  required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rafa<i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6AIBchRfV2qOBGdoRpegDxI96Qxwe8BwkpvVMewXBpu6N8pcogr5WYWvNvsC3rMTwRg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+        })
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+</html>
